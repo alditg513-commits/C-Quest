@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-bento-bg: #0d1117;
+  --color-bento-card: #161b22;
+  --color-bento-code: #010409;
+  --color-bento-border: #30363d;
+  --color-bento-accent: #3b82f6;
+  --color-bento-text: #c9d1d9;
+  --color-bento-muted: #8b949e;
+}
+
+body {
+  background-color: var(--color-bento-bg);
+  color: var(--color-bento-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  height: 100%;
+}
+
+.bento-card {
+  background-color: var(--color-bento-card);
+  border: 1px solid var(--color-bento-border);
+  border-radius: 1rem;
+}
+
+.code-font {
+  font-family: var(--font-mono);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bento-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bento-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bento-accent);
+}
